@@ -1,0 +1,102 @@
+.order{
+  padding: 40px 0;
+  &-container{
+
+  }
+  &-content{
+    display: flex;
+    justify-content: space-between;
+    &-main{
+      width: 680px;
+      h2{
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+      &--address{
+        border-top: 1px solid rgba(124, 124, 124, 0.2);
+        padding-top: 20px;
+        h3{
+          font-size: 24px;
+          font-weight: 400;
+        }
+        &-info{
+          margin-top: 24px;
+          span{
+            font-size: 18px;
+            font-weight: 400;
+            
+          }
+          &--location{
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            span{
+              font-size: 18px;
+              font-weight: 400;
+              &:last-child{
+                margin-left: 80px;
+              }
+            }
+          }
+          .btn--order{
+            width: 250px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            justify-content: center;
+          }
+
+        }
+      }
+      &--products{
+        margin-top: 24px;
+        &-title{
+          font-size: 24px;
+        }
+        ul{
+          margin-top: 24px;
+          li{
+            border-bottom: 1px solid rgba(124, 124, 124, 0.2);
+            padding: 20px 0;
+
+          }
+        }
+      }
+    }
+    &-count{
+      background: #F6FDFF;
+      padding: 30px;
+      height: 386px;
+      span{
+        font-size: 24px;
+      }
+      ul{
+        margin: 24px 0;
+        width: 311px;
+        border-top: 1px solid rgba(124, 124, 124, 0.2);
+        border-bottom: 1px dashed rgba(124, 124, 124, 0.2);
+        padding: 26px 0 26px 0;
+        li{
+          color: $color-gray;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 36px;
+          span{
+            font-size: 16px;
+            color: $color-black;
+          }
+        }
+      }
+      button{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+    }
+  }
+}

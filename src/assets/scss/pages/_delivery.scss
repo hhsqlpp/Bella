@@ -1,0 +1,40 @@
+.delivery {
+  padding: 40px 0;
+}
+.tabs {
+  display: flex;
+  &-action {
+    display: flex;
+    flex: 0 0 30%;
+    flex-direction: column;
+    li {
+      font-size: 14px;
+      color: $color-gray;
+      cursor: pointer;
+      margin-bottom: 24px;
+      &.active {
+        color: $color-brown;
+      }
+    }
+  }
+  &-list {
+    flex: 0 0 70%;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: $color-black;
+    }
+    p {
+      font-size: 15px;
+      line-height: 175%;
+      margin-bottom: 16px;
+
+      letter-spacing: 0.06em;
+      color: $color-gray;
+    }
+  }
+}

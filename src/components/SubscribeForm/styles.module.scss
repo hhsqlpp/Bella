@@ -1,0 +1,174 @@
+$color-white: #fff;
+$color-black: #2B2A2A;
+$color-gray: #7C7C7C;
+$color-red: #FF6565;
+$color-brown: #AB844A;
+
+.subscribeForm{
+  background: #F8F8F8;
+  position: relative;
+  &__content{
+    display: flex;
+    background: $color-white;
+    align-items: center;
+    &__info{
+      width: 380px;
+      margin: 0 auto;
+      h3{
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 24px;
+      }
+      p{
+        color: $color-gray;
+        letter-spacing: 0.04em;
+        line-height: 175%;
+        font-size: 14px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  &__errors{
+    color: #FF6565;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 16px;
+  }
+  .field{
+    border: 1px solid #E4E4E4;
+    margin-bottom: 12px;
+    color: #2B2A2A;
+    padding: 10px;
+    outline: none;
+
+    &:focus{
+      border: 1px solid #2B2A2A;
+    }
+  }
+}
+
+.dropdown{
+  &__field{
+    border: 1px solid #E4E4E4;
+    padding: 20px;
+    color: $color-gray;
+    cursor: pointer;
+    overflow: hidden;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &[class~=visible]{
+      height: 100px;
+    }
+    &[class~=active]{
+      border: 1px solid #2B2A2A;
+      color: #2B2A2A;
+    }
+    &[class~=activeLabel]{
+      color: #2B2A2A;
+    }
+    [class~=arrow]{
+      transition: .3s ease-out;
+    }
+    [class~=activeSvg]{
+      transform: rotate(180deg);
+    }
+  }
+  &__list{
+    border: 1px solid #E4E4E4;
+    transition: .3s ease;
+    li{
+      border-bottom: 1px solid #E4E4E4;
+      padding: 16px;
+      cursor: pointer;
+      &[class~=active]{
+        color: $color-brown;
+      }
+    }
+  }
+}
+
+.overlay{
+  background: rgba(0, 0, 0, 0.60%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow-y: hidden;
+  &[class~=active]{
+    height: 100%;
+  }
+}
+
+.popup__message{
+  background: #fff;
+  // width: 410px;
+  // height: 250px;
+  padding: 40px;
+  top: -100%;
+  left: 35%;
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 100;
+  position: absolute;
+  transition: .3s ease;
+  &[class~=active]{
+    top: 35%;
+    opacity: 1;
+  }
+  &__logo{
+    margin-bottom: 40px;
+  }
+  p{
+    color: $color-gray;
+    font-size: 14px;
+    margin: 20px 0;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+  .subscribeForm{
+    &__content{
+      // padding: 50px;
+      margin: 0;
+      &__image{
+        display: none;
+      }
+    }
+  }
+  .popup__message{
+    left: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 572px) {
+
+}

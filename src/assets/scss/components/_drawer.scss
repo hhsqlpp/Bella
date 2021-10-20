@@ -1,0 +1,89 @@
+// .drawer{
+//   position: absolute;
+//   right: 0;
+//   transform: translateX(100%);
+//   top: 78px;
+//   background: $color-white;
+//   z-index: 555;
+//   padding: 30px;
+//   transition: .6s ease;
+//   &.active{
+//     transform: translateX(0);
+//   }
+//   &-overlay{
+//     position: absolute;
+//     top: 78px;
+//     left: 0;
+//     width: 0;
+//     z-index: 500;
+//     height: 100vh;
+//     background: rgba(0, 0, 0, 0.7);
+//     transition: width 0.4s ease;
+//     &.active{
+//       width: 100%;
+//     }
+//   }
+//   &-list{
+//     display: flex;
+//     flex-direction: column;
+//     li{
+//       &::after{
+//         content: '';
+//         width: 100%;
+//         z-index: 100;
+//         display: block;
+//         height: 1px;
+//         background: #E4E4E4;;
+//       }
+//     }
+//   }
+//   &-footer{
+//     display: flex;
+//     border-top: 1px dashed #E4E4E4;
+//     flex-direction: column;
+//     margin-top: 24px;
+//     padding-top: 22px;
+//     &-count{
+//       font-size: 14px;
+//       color: $color-black;
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       span{
+//         font-weight: 500;
+//         color: $color-brown;
+//         font-size: 16px;
+//       }
+//     }
+//     &-totalPrice{
+//       font-size: 14px;
+//       color: $color-black;
+//       margin: 25px 0;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       span{
+//         font-weight: 500;
+//         color: $color-brown;
+//         font-size: 16px;
+//       }
+//     }
+//     span{
+//       color: $color-brown;
+//       font-size: 14px;
+//       text-align: center;
+//     }
+//   }
+// }
+
+// .btn--drawer{
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-bottom: 16px;
+//   width: 100%;
+// }
+
+// body{
+//   overflow-x: hidden;
+// }

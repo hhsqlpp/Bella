@@ -1,0 +1,80 @@
+.drawer-product{
+  display: flex;
+  padding-top: 10px;
+  &-image{
+    img{
+      width: 85px;
+    }
+  }
+  &-info{
+    margin-left: 12px;
+    position: relative;
+    padding-right: 60px;
+    margin-bottom: 20px;
+    span{
+      font-size: 14px;
+      color: $color-black;
+      font-weight: 500;
+    }
+    &-props{
+      font-size: 13px;
+      font-weight: 400;
+      color: $color-gray;
+      margin: 12px 0;
+      span{
+        color: $color-black;
+        font-size: 13px;
+        font-weight: 400;
+      }
+    }
+    &-delete{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    &-count{
+      display: flex;
+      align-items: center;
+      &-dec,
+      &-inc{
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        color: $color-white;
+        justify-content: center;
+        font-weight: 500;
+      }
+      &-dec{
+        background: $color-black;
+      }
+      &-field{
+        margin: 0 15px;
+        font-size: 16px;
+        color: $color-black;
+      }
+      &-inc{
+        background: $color-brown;
+      }
+    }
+    &-price{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      p{
+        text-decoration: line-through;
+        font-size: 16px;
+        color: $color-gray;
+        margin-right: 8px;
+      }
+      span{
+        font-size: 16px;
+        color: $color-brown;
+      }
+    }
+  }
+}

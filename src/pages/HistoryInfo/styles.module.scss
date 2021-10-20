@@ -1,0 +1,123 @@
+.history_info {
+  margin-bottom: 180px;
+  padding-top: 25px;
+
+  &_title {
+    font-family: HelveticaNeueCyr;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 440px;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &_item {
+      width: 100%;
+      display: flex;
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #7c7c7c;
+      position: relative;
+
+      &_info {
+        &_title {
+          font-family: HelveticaNeueCyr;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px;
+          margin-bottom: 20px;
+          color: #2b2a2a;
+        }
+
+        p {
+          font-family: HelveticaNeueCyr;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 16px;
+          margin-bottom: 20px;
+          color: #2b2a2a;
+
+          span {
+            color: #7c7c7c;
+            margin-right: 12px;
+          }
+        }
+      }
+
+      &_price {
+        position: absolute;
+        right: 0;
+
+        p {
+          font-family: HelveticaNeueCyr;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 20px;
+          color: #ab844a;
+        }
+
+        sub {
+          font-family: HelveticaNeueCyr;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 18px;
+          color: #7c7c7c;
+        }
+      }
+
+      img {
+        margin-right: 30px;
+        width: 155px;
+        height: 220px;
+      }
+    }
+  }
+
+  &_address {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      &:last-child {
+        div {
+          p {
+            color: #ab844a;
+          }
+        }
+      }
+
+      p {
+        font-family: HelveticaNeueCyr;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 550;
+        line-height: 20px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          font-family: HelveticaNeueCyr;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: right;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

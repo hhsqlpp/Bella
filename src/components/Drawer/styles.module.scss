@@ -1,0 +1,100 @@
+$color-white: #fff;
+$color-black: #2b2a2a;
+$color-gray: #7c7c7c;
+$color-red: #ff6565;
+$color-brown: #ab844a;
+
+.drawer {
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  top: 54px;
+  background: $color-white;
+  z-index: 555;
+  height: 100vh;
+  padding: 30px;
+  transition: 0.6s ease;
+  display: none;
+  &[class~="active"] {
+    transform: translateX(0);
+    display: block;
+  }
+  &__overlay {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 0;
+    z-index: 500;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    transition: width 0.4s ease;
+    &[class~="active"] {
+      width: 100%;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    li {
+      &::after {
+        content: "";
+        width: 100%;
+        z-index: 100;
+        display: block;
+        height: 1px;
+        background: #e4e4e4;
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    border-top: 1px dashed #e4e4e4;
+    flex-direction: column;
+    margin-top: 24px;
+    padding-top: 22px;
+    &__count {
+      font-size: 14px;
+      color: $color-black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        font-weight: 500;
+        color: $color-brown;
+        font-size: 16px;
+      }
+    }
+    &__totalPrice {
+      font-size: 14px;
+      color: $color-black;
+      margin: 25px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span {
+        font-weight: 500;
+        color: $color-brown;
+        font-size: 16px;
+      }
+    }
+    span {
+      color: $color-brown;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 500px) {
+  .drawer {
+    width: 100%;
+
+    button {
+      width: 100% !important;
+    }
+  }
+}

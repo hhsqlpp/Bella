@@ -1,0 +1,40 @@
+.categories__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &__type {
+    position: absolute;
+    bottom: 60px;
+    color: #000;
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+  .categories__item {
+    // width: 47%;
+    width: 44%;
+    margin: 10px;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 572px) {
+}

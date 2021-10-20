@@ -1,0 +1,82 @@
+.sidebar {
+  .categories--block {
+    width: 180px;
+    span {
+      font-size: 14px;
+      color: $color-black;
+    }
+    .filter--category {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      &-item {
+        font-size: 13px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        color: $color-gray;
+        //display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        &__link{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          span{
+            transition: .3s ease;
+            &:hover{
+              color: $color-brown;
+            }
+          }
+          &-arrow{
+            transition: .3s ease;
+            &.active{
+              transform: rotate(180deg);
+            }
+          }
+
+        }
+        a {
+          color: $color-gray;
+          transition: 0.2s ease-out;
+          &:hover {
+            color: $color-black;
+          }
+        }
+        svg {
+          transition: 0.3s ease-out;
+          cursor: context-menu;
+        }
+        &.active svg {
+          path {
+            fill: $color-brown;
+            transform: rotate(180deg);
+          }
+        }
+      }
+      &__inner {
+        display: block;
+        margin-top: 17px;
+        height: 0;
+        flex-direction: column;
+        transform: translateX(25px);
+        transition: .3s ease;
+        &.active{
+          height: 100px;
+        }
+        &.active .filter--category-item__link svg{
+          transform: rotate(90deg);
+        }
+        li{
+          margin-bottom: 20px;
+          font-size: 13px;
+          &:hover{
+            color: $color-brown;
+          }
+        }
+      }
+    }
+  }
+}

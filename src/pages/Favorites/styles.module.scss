@@ -1,0 +1,32 @@
+$color-white: #fff;
+$color-black: #2B2A2A;
+$color-gray: #7C7C7C;
+$color-red: #FF6565;
+$color-brown: #AB844A;
+
+
+.favorites {
+  padding: 40px 0;
+  &__header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  svg {
+    margin-left: 10px;
+    path {
+      fill: $color-brown;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+$color-white: #fff;
+$color-black: #2b2a2a;
+$color-gray: #7c7c7c;
+$color-red: #ff6565;
+$color-brown: #ab844a;
+
+.profile {
+  padding: 40px 0;
+
+  &__container {
+    width: 100%;
+    display: flex;
+
+    &__info {
+      width: 450px;
+
+      &__main {
+        display: flex;
+        flex-direction: column;
+
+        &__general {
+          margin-bottom: 40px;
+          display: flex;
+          flex-direction: column;
+
+          h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 300;
+          }
+        }
+
+        &__location {
+          h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    &__poster {
+      margin-left: auto;
+      position: relative;
+
+      img {
+      }
+
+      &__title {
+        position: absolute;
+        top: -50px;
+        right: 35px;
+        background: $color-white;
+        padding: 20px 60px;
+
+        svg {
+          width: 340px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__group {
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+
+    label {
+      color: $color-gray;
+      margin-bottom: 5px;
+      font-size: 13px;
+    }
+  }
+}
+
+.field {
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgba(124, 124, 124, 0.2);
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn--profile {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+@media (max-width: 1040px) {
+  .profile {
+    padding: 45px;
+    &__container {
+      display: flex;
+      justify-content: center;
+
+      &__info {
+        form {
+          h3 {
+            text-align: center;
+            font-size: 30px;
+          }
+
+          button {
+            border: 1px solid rgba(124, 124, 124, 0.2);
+          }
+        }
+      }
+
+      &__poster {
+        display: none;
+      }
+    }
+  }
+}

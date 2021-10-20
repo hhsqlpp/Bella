@@ -1,0 +1,40 @@
+$color-white: #fff;
+$color-black: #2b2a2a;
+$color-gray: #7c7c7c;
+$color-red: #ff6565;
+$color-brown: #ab844a;
+
+.order__list {
+  padding: 40px 0;
+  &__container {
+    h3 {
+      font-size: 32px;
+      font-weight: 400;
+    }
+  }
+  &__items {
+    &__item {
+      position: relative;
+      border-top: 1px solid rgba(124, 124, 124, 0.2);
+      padding: 27px 0;
+      margin: 27px 0;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .order__list {
+    &__items {
+      ul {
+        li {
+          display: none;
+
+          &:first-child {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

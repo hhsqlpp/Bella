@@ -1,0 +1,39 @@
+@import './fonts';
+@import './global';
+@import './vars';
+@import './normalize';
+
+// Components
+@import './components/header';
+@import './components/hero';
+@import './components/categories';
+@import './components/bestsellers';
+@import './components/card';
+@import './components/freshness';
+@import './components/subscribeForm';
+@import './components/benefits';
+@import './components/news';
+@import './components/footer';
+@import './components/sidebar';
+@import './components/navigation';
+@import './components/pagination';
+@import './components/drawer';
+@import './components/drawer-product';
+@import './components/drawer-empty';
+@import './components/modal-auth';
+@import './components/order-product';
+
+
+// Pages
+@import './pages/home';
+@import './pages/products';
+@import './pages/news';
+@import './pages/about';
+@import './pages/favorites';
+@import './pages/delivery';
+@import './pages/news-detail';
+@import './pages/profile';
+@import './pages/product-detail';
+@import './pages/404';
+@import './pages/order';
+@import './pages/order-list';

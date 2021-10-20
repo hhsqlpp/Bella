@@ -1,0 +1,37 @@
+$color-white: #fff;
+$color-black: #2b2a2a;
+$color-gray: #7c7c7c;
+$color-red: #ff6565;
+$color-brown: #ab844a;
+
+.modal {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background: $color-white;
+  z-index: 800;
+  transform: translateY(-500%);
+  opacity: 0;
+  left: 32%;
+  z-index: 200;
+  padding: 50px;
+  transition: 0.3s ease;
+  &[class~="active"] {
+    transform: translateY(20%);
+    opacity: 1;
+  }
+  &[class~="disabled"] {
+    transform: translateY(-500%);
+    opacity: 0;
+  }
+  &__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+  }
+}

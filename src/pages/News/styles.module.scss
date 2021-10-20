@@ -1,0 +1,27 @@
+@import "../../assets/scss/vars";
+
+.news__section {
+  padding: 40px 0;
+  &__header {
+    h3 {
+      font-size: 32px;
+      color: $color-black;
+    }
+  }
+  &__content {
+    h3 {
+      font-size: 32px;
+      font-weight: 400;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1100px) {
+  .news__item {
+    width: 100%;
+  }
+}

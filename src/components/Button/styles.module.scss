@@ -1,0 +1,71 @@
+$color-white: #fff;
+$color-black: #2b2a2a;
+$color-gray: #7c7c7c;
+$color-red: #ff6565;
+$color-brown: #ab844a;
+
+.btn {
+  padding: 14px;
+  cursor: pointer;
+  color: $color-black;
+  background: #fff;
+  border: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  transition: 0.3s ease;
+  svg {
+    transition: 0.3s ease;
+  }
+  svg path {
+    fill: $color-brown;
+  }
+  &:hover {
+    background: $color-black;
+    color: $color-white;
+  }
+  &:hover svg {
+    transform: translateX(5px);
+  }
+  &[class~="brown"] {
+    background: $color-brown;
+    color: $color-white;
+    svg path {
+      fill: $color-black;
+    }
+    &:hover {
+      background: $color-brown;
+    }
+  }
+  &[class~="black"] {
+    background: $color-black;
+    color: $color-white;
+    svg path {
+      fill: $color-brown;
+    }
+  }
+  &[class~="center"] {
+    margin: 20px auto;
+  }
+  &[class~="reset"] {
+    background: #bdbdbd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 6px;
+    transition: 0.3s ease;
+  }
+  &[class~="reset__finish"] {
+    background: $color-black;
+    color: $color-white;
+    justify-content: center;
+  }
+  svg {
+    margin: 0 10px;
+  }
+}

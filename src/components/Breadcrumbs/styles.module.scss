@@ -1,0 +1,18 @@
+$color-white: #fff;
+$color-black: #2B2A2A;
+$color-gray: #7C7C7C;
+$color-red: #FF6565;
+$color-brown: #AB844A;
+
+.breadcrumbs {
+  font-size: 13px;
+  &__link {
+    color: $color-black;
+    margin-right: 21px;
+    &__current {
+      color: $color-gray;
+      margin-left: 21px;
+    }
+  }
+  margin-bottom: 60px;
+}

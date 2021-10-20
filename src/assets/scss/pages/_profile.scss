@@ -1,0 +1,72 @@
+.profile {
+  padding: 40px 0;
+  &-container {
+    width: 100%;
+    display: flex;
+    &__info {
+      width: 450px;
+      &-main {
+        &__general {
+          margin-bottom: 40px;
+          display: flex;
+          flex-direction: column;
+          h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 300;
+          }
+        }
+        &__location {
+          h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    &__poster {
+      margin-left: auto;
+      position: relative;
+      img {
+      }
+      &-title {
+        position: absolute;
+        top: -50px;
+        right: 35px;
+        background: $color-white;
+        padding: 20px 60px;
+        svg {
+          width: 340px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+
+.form {
+  display: flex;
+  &-group {
+    display: flex;
+    flex-direction: column;
+    label {
+      color: $color-gray;
+      margin-bottom: 5px;
+      font-size: 13px;
+    }
+  }
+}
+
+.field {
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn--profile {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}

@@ -1,0 +1,38 @@
+.categories{
+  background: #FFF3E3;
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+  .categories{
+    padding: 20px 0;
+    &__list{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 572px) {
+
+}

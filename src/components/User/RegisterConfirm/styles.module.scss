@@ -1,0 +1,70 @@
+$color-white: #fff;
+$color-black: #2B2A2A;
+$color-gray: #7C7C7C;
+$color-red: #FF6565;
+$color-brown: #AB844A;
+
+.modal__form{
+  display: flex;
+  flex-direction: column;
+  width: 344px;
+  &__group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    label {
+      margin-bottom: 5px;
+      font-size: 13px;
+      color: $color-black;
+    }
+    input{
+      margin: 0;
+    }
+  }
+  &__title{
+    font-size: 20px;
+    color: $color-black;
+  }
+  &__field{
+    outline: none;
+    border: 1px solid #E4E4E4;
+    padding: 10px;
+    font-size: 14px;
+    margin: 15px 0;
+    transition: .3s ease;
+    &:focus{
+      border: 1px solid #2B2A2A;
+    }
+    &[class~=invalid]{
+      border: 1px solid #FF6565;
+    }
+  }
+  &__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__reg{
+    margin-top: 24px;
+    text-align: center;
+    color: $color-brown;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  &__help{
+    color: $color-gray;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+  &__error{
+    font-size: 16px;
+    color: #FF6565;
+    margin-top: 31px;
+    text-align: center;
+    font-weight: 400;
+  }
+
+}
